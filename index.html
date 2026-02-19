@@ -1,92 +1,81 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Balony</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f0f8ff;
-    }
+    <meta charset="UTF-8">
+    <title>Zmiana koloru balonów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+        }
 
-    .container {
-      display: flex;
-      align-items: center;
-      gap: 50px;
-    }
+        .balloons {
+            margin-top: 40px;
+        }
 
-    .balloons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
+        .balloon {
+            width: 120px;
+            height: 160px;
+            border-radius: 60% 60% 55% 55%;
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+        }
 
-    .balloon {
-      width: 60px;
-      height: 80px;
-      border-radius: 50% 50% 50% 50%;
-      position: relative;
-      background-color: red;
-      transition: background-color 0.3s;
-    }
+        .string {
+            width: 2px;
+            height: 80px;
+            background: #333;
+            position: absolute;
+            left: 50%;
+            top: 160px;
+        }
 
-    .balloon::after {
-      content: '';
-      width: 2px;
-      height: 30px;
-      background: gray;
-      position: absolute;
-      bottom: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .color-btn {
-      width: 60px;
-      height: 30px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  </style>
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="balloons">
-      <div class="balloon"></div>
-      <div class="balloon"></div>
-      <div class="balloon"></div>
-      <div class="balloon"></div>
-      <div class="balloon"></div>
-    </div>
-    <div class="buttons">
-      <button class="color-btn" style="background-color: red;" onclick="changeColor('red')"></button>
-      <button class="color-btn" style="background-color: blue;" onclick="changeColor('blue')"></button>
-      <button class="color-btn" style="background-color: green;" onclick="changeColor('green')"></button>
-      <button class="color-btn" style="background-color: yellow;" onclick="changeColor('yellow')"></button>
-      <button class="color-btn" style="background-color: purple;" onclick="changeColor('purple')"></button>
-    </div>
-  </div>
 
-  <script>
-    function changeColor(color) {
-      const balloons = document.querySelectorAll('.balloon');
-      balloons.forEach(b => {
-        b.style.backgroundColor = color;
-      });
-    }
-  </script>
+    <h1>Zmiana koloru balonów</h1>
+
+    <div class="balloons">
+        <div id="balon-czarny" class="balloon" style="background:black;">
+            <div class="string"></div>
+        </div>
+
+        <div id="balon-czerwony" class="balloon" style="background:red;">
+            <div class="string"></div>
+        </div>
+    </div>
+
+    <h2>Zmień kolor balonów</h2>
+
+    <div>
+        <h3>Czarny balon</h3>
+        <button onclick="changeColor('balon-czarny', 'blue')">Niebieski</button>
+        <button onclick="changeColor('balon-czarny', 'green')">Zielony</button>
+        <button onclick="changeColor('balon-czarny', 'gold')">Złoty</button>
+    </div>
+
+    <div>
+        <h3>Czerwony balon</h3>
+        <button onclick="changeColor('balon-czerwony', 'purple')">Fioletowy</button>
+        <button onclick="changeColor('balon-czerwony', 'pink')">Różowy</button>
+        <button onclick="changeColor('balon-czerwony', 'silver')">Srebrny</button>
+    </div>
+
+    <script>
+        function changeColor(id, color) {
+            document.getElementById(id).style.background = color;
+        }
+    </script>
+
 </body>
 </html>
+
