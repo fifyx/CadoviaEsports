@@ -1,47 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="frame">
-      <img class="background" src="img/background.png" />
-      <img class="background-underline" src="img/background-underline.png" />
-      <div class="text-wrapper">BEST PLAYER</div>
-      <div class="div">Rating</div>
-      <div class="text-wrapper-2">ADR</div>
-      <div class="text-wrapper-3">KILLS</div>
-      <img class="opengraphhltvlogo" src="img/opengraphhltvlogo-1.png" />
-      <img class="ESL-pro-league-logo" src="img/ESL-pro-league-logo-svg-1.png" />
-      <img class="logitech-logo-dark" src="img/logitech-logo-dark-5120x2880-17915-1.png" />
-      <img class="gbs" src="img/gbs-1.png" />
-      <div class="text-wrapper-4">AIM beast</div>
-      <img class="AIM-nick" src="img/AIM-nick.png" />
-      <div class="text-wrapper-5">Headshot %</div>
-      <img class="AIM-HS" src="img/AIM-HS.png" />
-      <img class="AIM-name" src="img/AIM-name.png" />
-      <img class="nick-BP" src="img/nick-BP.png" />
-      <img class="name-BP" src="img/name-BP.png" />
-      <img class="ADR-BP" src="img/ADR-BP.png" />
-      <img class="rating-BP" src="img/rating-BP.png" />
-      <img class="kills-BP" src="img/kills-BP.png" />
-      <img class="date" src="img/date.png" />
-      <div class="day">results on</div>
-      <div class="text-wrapper-6">NOOB</div>
-      <img class="NOOB-nick" src="img/NOOB-nick.png" />
-      <div class="text-wrapper-7">rating</div>
-      <img class="NOOB-rating" src="img/NOOB-rating.png" />
-      <img class="NOOB-name" src="img/NOOB-name.png" />
-      <div class="background-image-BP"></div>
-      <img class="image-BP" src="img/image-BP.png" />
-      <div class="background-image"></div>
-      <div class="background-image-AIM"></div>
-      <img class="image-NOOB" src="img/image-NOOB.png" />
-      <img class="image-AIM" src="img/image-AIM.png" />
-    </div>
-  </body>
-</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadovia Esports</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0f172a; /* ciemne tło */
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: #1e293b; /* ciemniejsza karta */
+      border-radius: 12px;
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      color: #38bdf8; /* niebieski akcent */
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .match-result {
+      background: #334155; /* ciemnoszary pasek */
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #facc15; /* żółty akcent dla wyniku */
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #94a3b8; /* szary */
+    }
+
+    /* Responsywność */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .match-result {
+        font-size: 1.2rem;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Cadovia Esports</h1>
+    <div class="match-result">Last match: Cadovia 13-7 TeamSpirit</div>
+    <div class="footer">Check back soon for updated stats!</div>
+  </div>
+</body>
+</html>
