@@ -1,46 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="frame">
-      <img class="background" src="img/background.png" />
-      <img class="background-underline" src="img/background-underline.png" />
-      <div class="text-wrapper">BEST PLAYER</div>
-      <div class="div">Rating</div>
-      <div class="text-wrapper-2">ADR</div>
-      <div class="text-wrapper-3">KILLS</div>
-      <img class="opengraphhltvlogo" src="img/opengraphhltvlogo-1.png" />
-      <img class="ESL-pro-league-logo" src="img/ESL-pro-league-logo-svg-1.png" />
-      <img class="logitech-logo-dark" src="img/logitech-logo-dark-5120x2880-17915-1.png" />
-      <img class="gbs" src="img/gbs-1.png" />
-      <div class="text-wrapper-4">AIM beast</div>
-      <img class="AIM-nick" src="img/AIM-nick.png" />
-      <div class="text-wrapper-5">Headshot %</div>
-      <img class="AIM-HS" src="img/AIM-HS.png" />
-      <img class="AIM-name" src="img/AIM-name.png" />
-      <img class="nick-BP" src="img/nick-BP.png" />
-      <img class="name-BP" src="img/name-BP.png" />
-      <img class="ADR-BP" src="img/ADR-BP.png" />
-      <img class="rating-BP" src="img/rating-BP.png" />
-      <img class="kills-BP" src="img/kills-BP.png" />
-      <img class="date" src="img/date.png" />
-      <div class="day">results on</div>
-      <div class="text-wrapper-6">NOOB</div>
-      <img class="NOOB-nick" src="img/NOOB-nick.png" />
-      <div class="text-wrapper-7">rating</div>
-      <img class="NOOB-rating" src="img/NOOB-rating.png" />
-      <img class="NOOB-name" src="img/NOOB-name.png" />
-      <div class="background-image-BP"></div>
-      <img class="image-BP" src="img/image-BP.png" />
-      <div class="background-image"></div>
-      <div class="background-image-AIM"></div>
-      <img class="image-NOOB" src="img/image-NOOB.png" />
-      <img class="image-AIM" src="img/image-AIM.png" />
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Balony</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f8ff;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .balloons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .balloon {
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 50% 50%;
+      position: relative;
+      background-color: red;
+      transition: background-color 0.3s;
+    }
+
+    .balloon::after {
+      content: '';
+      width: 2px;
+      height: 30px;
+      background: gray;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .color-btn {
+      width: 60px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="balloons">
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
     </div>
-  </body>
+    <div class="buttons">
+      <button class="color-btn" style="background-color: red;" onclick="changeColor('red')"></button>
+      <button class="color-btn" style="background-color: blue;" onclick="changeColor('blue')"></button>
+      <button class="color-btn" style="background-color: green;" onclick="changeColor('green')"></button>
+      <button class="color-btn" style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+      <button class="color-btn" style="background-color: purple;" onclick="changeColor('purple')"></button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor(color) {
+      const balloons = document.querySelectorAll('.balloon');
+      balloons.forEach(b => {
+        b.style.backgroundColor = color;
+      });
+    }
+  </script>
+</body>
 </html>
