@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadovia Esports</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #38bdf8;
+        }
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cadovia Esports</h1>
+    <p>Oficjalne statystyki drużyny</p>
+
+    <div class="card">
+        <h2>Ranking Graczy</h2>
+        <table border="1" style="margin:auto; color:white;">
+            <tr>
+                <th>Gracz</th>
+                <th>K/D</th>
+                <th>Win Rate</th>
+            </tr>
+            <tr>
+                <td>Filip</td>
+                <td>1.45</td>
+                <td>62%</td>
+            </tr>
+            <tr>
+                <td>Kuba</td>
+                <td>1.22</td>
+                <td>58%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>K/D Chart</h2>
+        <canvas id="kdChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('kdChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Filip', 'Kuba'],
+                datasets: [{
+                    label: 'K/D Ratio',
+                    data: [1.45, 1.22]
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>
