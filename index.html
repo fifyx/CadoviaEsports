@@ -1,72 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Cadovia Esports</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            background-color: #0f172a;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            color: #38bdf8;
-        }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 12px;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Cadovia Esports</h1>
-    <p>Oficjalne statystyki drużyny</p>
-
-    <div class="card">
-        <h2>Ranking Graczy</h2>
-        <table border="1" style="margin:auto; color:white;">
-            <tr>
-                <th>Gracz</th>
-                <th>K/D</th>
-                <th>Win Rate</th>
-            </tr>
-            <tr>
-                <td>Filip</td>
-                <td>1.45</td>
-                <td>62%</td>
-            </tr>
-            <tr>
-                <td>Kuba</td>
-                <td>1.22</td>
-                <td>58%</td>
-            </tr>
-        </table>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <img class="background" src="img/background.png" />
+      <img class="background-underline" src="img/background-underline.png" />
+      <div class="text-wrapper">BEST PLAYER</div>
+      <div class="div">Rating</div>
+      <div class="text-wrapper-2">ADR</div>
+      <div class="text-wrapper-3">KILLS</div>
+      <img class="opengraphhltvlogo" src="img/opengraphhltvlogo-1.png" />
+      <img class="ESL-pro-league-logo" src="img/ESL-pro-league-logo-svg-1.png" />
+      <img class="logitech-logo-dark" src="img/logitech-logo-dark-5120x2880-17915-1.png" />
+      <img class="gbs" src="img/gbs-1.png" />
+      <div class="text-wrapper-4">AIM beast</div>
+      <img class="AIM-nick" src="img/AIM-nick.png" />
+      <div class="text-wrapper-5">Headshot %</div>
+      <img class="AIM-HS" src="img/AIM-HS.png" />
+      <img class="AIM-name" src="img/AIM-name.png" />
+      <img class="nick-BP" src="img/nick-BP.png" />
+      <img class="name-BP" src="img/name-BP.png" />
+      <img class="ADR-BP" src="img/ADR-BP.png" />
+      <img class="rating-BP" src="img/rating-BP.png" />
+      <img class="kills-BP" src="img/kills-BP.png" />
+      <img class="date" src="img/date.png" />
+      <div class="day">results on</div>
+      <div class="text-wrapper-6">NOOB</div>
+      <img class="NOOB-nick" src="img/NOOB-nick.png" />
+      <div class="text-wrapper-7">rating</div>
+      <img class="NOOB-rating" src="img/NOOB-rating.png" />
+      <img class="NOOB-name" src="img/NOOB-name.png" />
+      <div class="background-image-BP"></div>
+      <img class="image-BP" src="img/image-BP.png" />
+      <div class="background-image"></div>
+      <div class="background-image-AIM"></div>
+      <img class="image-NOOB" src="img/image-NOOB.png" />
+      <img class="image-AIM" src="img/image-AIM.png" />
     </div>
-
-    <div class="card">
-        <h2>K/D Chart</h2>
-        <canvas id="kdChart"></canvas>
-    </div>
-
-    <script>
-        const ctx = document.getElementById('kdChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Filip', 'Kuba'],
-                datasets: [{
-                    label: 'K/D Ratio',
-                    data: [1.45, 1.22]
-                }]
-            }
-        });
-    </script>
-
-</body>
+  </body>
 </html>
