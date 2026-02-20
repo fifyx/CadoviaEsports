@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Match Results</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="vars.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="frame-1">
-  <div class="background"></div>
-  <div class="background-underline"></div>
-  <div class="best-player">BEST PLAYER</div>
-  <div class="rating">Rating</div>
-  <div class="adr">ADR</div>
-  <div class="kills">KILLS</div>
-  <div class="aim-beast">AIM beast</div>
-  <div class="aim-nick">"koka"</div>
-  <div class="headshot">Headshot %</div>
-  <div class="aim-hs">75</div>
-  <div class="aim-name">Kacper Włodarczyk</div>
-  <div class="nick-bp">"Monte"</div>
-  <div class="name-bp">Bartosz Daros</div>
-  <div class="adr-bp">95.71</div>
-  <div class="rating-bp">1.31</div>
-  <div class="kills-bp">141</div>
-  <div class="date">17th Mar 2025</div>
-  <div class="day">results on</div>
-  <div class="noob">NOOB</div>
-  <div class="noob-nick">"koka"</div>
-  <div class="rating2">rating</div>
-  <div class="noob-rating">0.46</div>
-  <div class="noob-name">Kacper Włodarczyk</div>
-  <div class="background-image-bp"></div>
-  <div class="background-image-noob"></div>
-  <div class="background-image-aim"></div>
-</div>
+  <div class="container">
+
+    <div class="top-title">
+      <p>RESULTS ON</p>
+      <p>17TH MAR 2025</p>
+    </div>
+
+    <h1 class="main-title">BEST PLAYER</h1>
+
+    <div class="players">
+
+      <!-- LEFT -->
+      <div class="player">
+        <h2 class="role">NOOB</h2>
+        <div class="image-placeholder"></div>
+        <p class="nickname">"KOKA"</p>
+        <p class="name gradient">KACPER WŁODARCZYK</p>
+        <div class="stats">
+          <p>RATING</p>
+          <span>0.46</span>
+        </div>
+      </div>
+
+      <!-- CENTER -->
+      <div class="player center">
+        <div class="image-placeholder big"></div>
+        <p class="nickname">"MONTE"</p>
+        <p class="name gradient">BARTOSZ DAROS</p>
+        <div class="stats-row">
+          <div>
+            <p>ADR</p>
+            <span>95.71</span>
+          </div>
+          <div>
+            <p>RATING</p>
+            <span>1.31</span>
+          </div>
+          <div>
+            <p>KILLS</p>
+            <span>141</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="player">
+        <h2 class="role">AIM BEAST</h2>
+        <div class="image-placeholder"></div>
+        <p class="nickname">"KOKA"</p>
+        <p class="name gradient">KACPER WŁODARCZYK</p>
+        <div class="stats">
+          <p>HEADSHOT %</p>
+          <span>75</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="bottom-gradient"></div>
 
 </body>
 </html>
