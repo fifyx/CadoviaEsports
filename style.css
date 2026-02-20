@@ -1,307 +1,131 @@
-.frame-1,
-.frame-1 * {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.frame-1 {
-  background: #ffffff;
-  height: 1080px;
-  position: relative;
-  overflow: hidden;
+
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
 }
-.background {
-  background: #131111;
-  width: 1920px;
-  height: 1080px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.background-underline {
-  background: linear-gradient(
-    90deg,
-    rgba(221, 39, 166, 1) 0%,
-    rgba(114, 16, 200, 1) 25%,
-    rgba(19, 160, 248, 1) 50%,
-    rgba(44, 23, 204, 1) 75%,
-    rgba(22, 234, 160, 1) 100%
-  );
-  width: 1920px;
-  height: 28px;
-  position: absolute;
-  left: 0px;
-  top: 1052px;
-}
-.best-player {
-  color: #f5f5f5;
+
+.container {
   text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 100px;
-  font-weight: 400;
-  position: absolute;
-  left: 511px;
-  top: 219px;
-  width: 904px;
-  -webkit-text-stroke: 1px #000000;
+  padding: 40px 20px 80px;
 }
-.rating {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 891px;
-  top: 818px;
+
+.top-title {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
 }
-.adr {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 774px;
-  top: 818px;
-}
-.kills {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1059px;
-  top: 818px;
-}
-.aim-beast {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  position: absolute;
-  left: 1453px;
-  top: 417px;
-  width: 200px;
-  height: 76px;
-}
-.aim-nick {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 1497px;
-  top: 699px;
-}
-.headshot {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 1320px;
-  top: 818px;
-  width: 467px;
-  height: 74px;
-}
-.aim-hs {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 1533px;
-  top: 870px;
-}
-.aim-name {
-  background: linear-gradient(
-    90deg,
-    rgba(221, 39, 166, 1) 0%,
-    rgba(114, 16, 200, 1) 25%,
-    rgba(19, 160, 248, 1) 50%,
-    rgba(44, 23, 204, 1) 75%,
-    rgba(22, 234, 160, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 1388px;
-  top: 758px;
-}
-.nick-bp {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 70px;
-  font-weight: 400;
-  position: absolute;
-  left: 866px;
-  top: 651px;
-}
-.name-bp {
-  background: linear-gradient(
-    90deg,
-    rgba(221, 39, 166, 1) 0%,
-    rgba(114, 16, 200, 1) 25%,
-    rgba(19, 160, 248, 1) 50%,
-    rgba(44, 23, 204, 1) 75%,
-    rgba(22, 234, 160, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
+
+.main-title {
   font-size: 80px;
-  font-weight: 400;
-  position: absolute;
-  left: 768px;
-  top: 714px;
+  margin-bottom: 40px;
 }
-.adr-bp {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 755px;
-  top: 877px;
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 60px;
+  flex-wrap: wrap;
 }
-.rating-bp {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 915px;
-  top: 876px;
+
+.player {
+  max-width: 300px;
 }
-.kills-bp {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1075px;
-  top: 876px;
+
+.role {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
-.date {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  position: absolute;
-  left: 815px;
-  top: 99px;
+
+.image-placeholder {
+  width: 250px;
+  height: 250px;
+  background: #cfcfcf;
+  margin: 0 auto 20px;
 }
-.day {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  position: absolute;
-  left: 854px;
-  top: 27px;
+
+.image-placeholder.big {
+  width: 320px;
+  height: 320px;
 }
-.noob {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  position: absolute;
-  left: 240px;
-  top: 417px;
-  width: 200px;
-  height: 76px;
+
+.nickname {
+  font-size: 36px;
 }
-.noob-nick {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 284px;
-  top: 699px;
+
+.name {
+  font-size: 34px;
+  margin-bottom: 20px;
 }
-.rating2 {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 107px;
-  top: 818px;
-  width: 467px;
-  height: 74px;
-}
-.noob-rating {
-  color: #f5f5f5;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 305px;
-  top: 870px;
-}
-.noob-name {
-  background: linear-gradient(
-    90deg,
-    rgba(221, 39, 166, 1) 0%,
-    rgba(114, 16, 200, 1) 25%,
-    rgba(19, 160, 248, 1) 50%,
-    rgba(44, 23, 204, 1) 75%,
-    rgba(22, 234, 160, 1) 100%
-  );
-  background-clip: text;
+
+.gradient {
+  background: linear-gradient(90deg, #ff2fb2, #3b5bff, #00e5a8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: "BebasNeue-Regular", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  left: 174px;
-  top: 758px;
 }
-.background-image-bp {
-  background: #d9d9d9;
-  width: 310px;
-  height: 310px;
-  position: absolute;
-  left: 808px;
-  top: 334px;
+
+.stats {
+  font-size: 32px;
 }
-.background-image-noob {
-  background: #d9d9d9;
-  width: 210px;
-  height: 210px;
-  position: absolute;
-  left: 235px;
-  top: 484px;
+
+.stats span {
+  display: block;
+  font-size: 40px;
 }
-.background-image-aim {
-  background: #d9d9d9;
-  width: 210px;
-  height: 210px;
-  position: absolute;
-  left: 1448px;
-  top: 488px;
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 28px;
+}
+
+.stats-row span {
+  display: block;
+  font-size: 36px;
+}
+
+.bottom-gradient {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff2fb2, #3b5bff, #00e5a8);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 60px;
+  }
+
+  .image-placeholder.big {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .players {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-placeholder,
+  .image-placeholder.big {
+    width: 220px;
+    height: 220px;
+  }
+
+  .main-title {
+    font-size: 50px;
+  }
 }
