@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Zmiana koloru balonów</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f5f5f5;
-        }
+  <meta charset="UTF-8">
+  <title>Match Results</title>
 
-        .balloons {
-            margin-top: 40px;
-        }
-
-        .balloon {
-            width: 120px;
-            height: 160px;
-            border-radius: 60% 60% 55% 55%;
-            display: inline-block;
-            margin: 20px;
-            position: relative;
-        }
-
-        .string {
-            width: 2px;
-            height: 80px;
-            background: #333;
-            position: absolute;
-            left: 50%;
-            top: 160px;
-        }
-
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="vars.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Zmiana koloru balonów</h1>
-
-    <div class="balloons">
-        <div id="balon-czarny" class="balloon" style="background:black;">
-            <div class="string"></div>
-        </div>
-
-        <div id="balon-czerwony" class="balloon" style="background:red;">
-            <div class="string"></div>
-        </div>
-    </div>
-
-    <h2>Zmień kolor balonów</h2>
-
-    <div>
-        <h3>Czarny balon</h3>
-        <button onclick="changeColor('balon-czarny', 'blue')">Niebieski</button>
-        <button onclick="changeColor('balon-czarny', 'green')">Zielony</button>
-        <button onclick="changeColor('balon-czarny', 'gold')">Złoty</button>
-    </div>
-
-    <div>
-        <h3>Czerwony balon</h3>
-        <button onclick="changeColor('balon-czerwony', 'purple')">Fioletowy</button>
-        <button onclick="changeColor('balon-czerwony', 'pink')">Różowy</button>
-        <button onclick="changeColor('balon-czerwony', 'silver')">Srebrny</button>
-    </div>
-
-    <script>
-        function changeColor(id, color) {
-            document.getElementById(id).style.background = color;
-        }
-    </script>
+<div class="frame-1">
+  <div class="background"></div>
+  <div class="background-underline"></div>
+  <div class="best-player">BEST PLAYER</div>
+  <div class="rating">Rating</div>
+  <div class="adr">ADR</div>
+  <div class="kills">KILLS</div>
+  <div class="aim-beast">AIM beast</div>
+  <div class="aim-nick">"koka"</div>
+  <div class="headshot">Headshot %</div>
+  <div class="aim-hs">75</div>
+  <div class="aim-name">Kacper Włodarczyk</div>
+  <div class="nick-bp">"Monte"</div>
+  <div class="name-bp">Bartosz Daros</div>
+  <div class="adr-bp">95.71</div>
+  <div class="rating-bp">1.31</div>
+  <div class="kills-bp">141</div>
+  <div class="date">17th Mar 2025</div>
+  <div class="day">results on</div>
+  <div class="noob">NOOB</div>
+  <div class="noob-nick">"koka"</div>
+  <div class="rating2">rating</div>
+  <div class="noob-rating">0.46</div>
+  <div class="noob-name">Kacper Włodarczyk</div>
+  <div class="background-image-bp"></div>
+  <div class="background-image-noob"></div>
+  <div class="background-image-aim"></div>
+</div>
 
 </body>
 </html>
