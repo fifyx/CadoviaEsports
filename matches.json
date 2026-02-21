@@ -19,7 +19,7 @@
         "name": "FILIP JĘDRZEJCZYK",
         "nickname": "FILIP",
         "role": "AIM BEAST",
-        "stats": { "HEADSHOT %": 75, "KILLS": 110 }
+        "stats": { "HEADSHOT %": 75}
       }
     ]
   },
@@ -43,7 +43,7 @@
         "name": "BARTOSZ DAROS",
         "nickname": "MONTE",
         "role": "AIM BEAST",
-        "stats": { "HEADSHOT %": 80, "KILLS": 150 }
+        "stats": { "HEADSHOT %": 80}
       }
     ]
   }

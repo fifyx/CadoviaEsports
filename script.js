@@ -54,8 +54,7 @@ function updateMatch() {
       KILLS: player.stats.KILLS
     };
     else if (player.role === "AIM BEAST") statsToShow = {
-      "HEADSHOT %": player.stats["HEADSHOT %"],
-      KILLS: player.stats.KILLS
+      "HEADSHOT %": player.stats["HEADSHOT %"]
     };
     else statsToShow = player.stats;
 
