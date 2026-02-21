@@ -1,0 +1,50 @@
+[
+  {
+    "dateFolder": "2026_01_26_2026_02_01",
+    "display": "26-01 JAN/FEB 2026",
+    "players": [
+      {
+        "name": "KACPER WŁODARCZYK",
+        "nickname": "KOKA",
+        "role": "NOOB",
+        "stats": { "RATING": 0.46, "KILLS": 120 }
+      },
+      {
+        "name": "BARTOSZ DAROS",
+        "nickname": "MONTE",
+        "role": "",
+        "stats": { "ADR": 95.71, "RATING": 1.31, "KILLS": 141 }
+      },
+      {
+        "name": "FILIP JĘDRZEJCZYK",
+        "nickname": "FILIP",
+        "role": "AIM BEAST",
+        "stats": { "HEADSHOT %": 75, "KILLS": 110 }
+      }
+    ]
+  },
+  {
+    "dateFolder": "2026_01_21_2026_01_25",
+    "display": "21-25 FEB 2026",
+    "players": [
+      {
+        "name": "FILIP JĘDRZEJCZYK",
+        "nickname": "FILIP",
+        "role": "NOOB",
+        "stats": { "RATING": 0.85, "KILLS": 130 }
+      },
+      {
+        "name": "KACPER WŁODARCZYK",
+        "nickname": "KOKA",
+        "role": "",
+        "stats": { "ADR": 88.12, "RATING": 1.11, "KILLS": 135 }
+      },
+      {
+        "name": "BARTOSZ DAROS",
+        "nickname": "MONTE",
+        "role": "AIM BEAST",
+        "stats": { "HEADSHOT %": 80, "KILLS": 150 }
+      }
+    ]
+  }
+]

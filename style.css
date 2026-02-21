@@ -26,28 +26,42 @@ body {
   margin-bottom: 40px;
 }
 
+/* Gracze */
 .players {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start; /* wyrównanie do góry */
   gap: 60px;
   flex-wrap: wrap;
 }
 
 .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 300px;
+  min-height: 550px; /* zapewnia równe kolumny */
 }
 
+/* Role */
 .role {
   font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Zdjęcia w ramce */
 .image-placeholder {
   width: 250px;
   height: 250px;
-  background: #cfcfcf;
+  background: #0b0b0b;       /* tło kwadratu */
+  border: 4px solid white;    /* biała ramka */
   margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-placeholder.big {
@@ -55,13 +69,24 @@ body {
   height: 320px;
 }
 
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* wypełnia kwadrat */
+  display: block;
+  border-radius: 0%;
+}
+
+/* Nick i imię */
 .nickname {
   font-size: 36px;
+  text-align: center;
 }
 
 .name {
   font-size: 34px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .gradient {
@@ -70,13 +95,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* Statystyki */
 .stats {
   font-size: 32px;
-}
-
-.stats span {
-  display: block;
-  font-size: 40px;
+  text-align: center;
 }
 
 .stats-row {
@@ -86,11 +108,12 @@ body {
   font-size: 28px;
 }
 
-.stats-row span {
+.stats span {
   display: block;
   font-size: 36px;
 }
 
+/* Gradient dolny */
 .bottom-gradient {
   height: 20px;
   width: 100%;
@@ -98,6 +121,40 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+/* Nawigacja dat */
+.date-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrow {
+  background: none;
+  border: 1.5px solid white;
+  color: white;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover {
+  background: white;
+  color: black;
+}
+
+#dateDisplay {
+  font-size: 28px;
+  letter-spacing: 2px;
+  min-width: 250px;
 }
 
 /* RESPONSIVE */
